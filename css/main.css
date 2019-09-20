@@ -11,7 +11,9 @@ body {
   padding-top: 60px
 }
 
-th, td {
+/*Schedule Table*/
+
+th, #scheduleTable td {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: left;
@@ -24,4 +26,36 @@ th, td {
 
 #dateCol {
   min-width: 100px;
+}
+
+/*Instructors*/
+
+#shiva {
+  padding-right: 50px
+}
+
+.instructors {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.instructors table {
+  width: 100%;
+}
+
+.instructors td {
+  vertical-align: top;
+}
+
+.instructors td > div {
+  float: left;
+  min-width: 135px;
+  margin-bottom: 24px;
+}
+
+.instructors img {
+  border-radius: 50%;
+  width: 100px;
+  margin: auto;
+  padding: 10px;
 }
