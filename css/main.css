@@ -10,3 +10,18 @@ body {
 .section {
   padding-top: 60px
 }
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 2px solid #343a40;
+}
+
+#eventCol {
+  min-width: 150px;
+}
+
+#dateCol {
+  min-width: 100px;
+}
