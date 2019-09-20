@@ -16,6 +16,8 @@
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
 
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -29,21 +31,33 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item active" id="homeNav">
             <a class="nav-link" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li> -->
+          <li class="nav-item" id="scheduleNav">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item" id="logisticsNav">
+            <a class="nav-link" href="#logistics">Logistics</a>
+          </li>
+          <li class="nav-item" id="projectsNav">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item" id="staffNav">
+            <a class="nav-link" href="#staff">Staff</a>
+          </li>
+          <li class="nav-item" id="officehoursNav">
+            <a class="nav-link" href="#officehours">Office Hours</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Header -->
-  <header class="bg-primary py-3 mb-5">
+  <header class="bg-primary py-3">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
@@ -57,35 +71,32 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
-      <div class="col-md-8 mb-5">
+    <div class="row section" id="home">
+      <div class="col-md-8">
         <h2>Course Overview Overview</h2>
         <hr>
         <p>This course covers database design and the use of databases in applications, with a short introduction to the internals of relational database engines, the relational model, relational algebra, and SQL.</p>
         <p>Students will also learn about database design and relational design principles based on dependencies and normal forms as well as many additional key database topics from the design and application-building
           perspective. This will include indexes, views, transactions, and integrity constraints. We'll also introduce MapReduce framework and key-value stores.</p>
-        <p>The class will culminate in a hands-on programming project in SQL+Python &mdash; a key part of the course &mdash; where you will query, visualize and predict from terabytes of data on BigQuery,
+        <p>The class will culminate in a hands-on programming project in SQL+Python &mdash; a key part of the course &mdash; where you will query, visualize and predict from terabytes of data on <a href="https://cloud.google.com/bigquery/">BigQuery</a>,
           a popular cloud database part of Google Cloud Platform.</p>
       </div>
-      <div class="col-md-4 mb-5">
-        <h2>Schedule</h2>
+      <div class="col-md-4">
+        <h2>Key Dates</h2>
         <hr>
         <address>
-          <!-- <strong>Lectures</strong><br> -->
           <strong>Lectures: Tues/Thurs</strong>
           <br>4:30 PM - 5:50 PM
           <br>NVIDIA Auditorium
           <br>
         </address>
         <address>
-          <!-- <strong>Midterm</strong><br> -->
           <strong>Midterm: Date TBD</strong>
           <br>Time TBD
           <br>Location TBD
           <br>
         </address>
         <address>
-          <!-- <strong>Final Exam</strong><br> -->
           <strong>Final Exam: Monday, December 9</strong>
           <br>7:00PM - 10:00PM
           <br>Location TBD
@@ -94,12 +105,159 @@
       </div>
     </div>
 
+    <div class="row section" id="schedule">
+      <div class="col-md-12">
+        <h2>Schedule</h2>
+        <hr>
+
+      </div>
+
+    </div>
+
+    <div class="row section" id="logistics">
+      <div class="col-md-12">
+        <h2 >Course Logistics and Policies</h2>
+        <hr>
+        <p>
+        <b>Piazza</b> Join our Piazza</a> to receive important
+        announcements and get answers to your questions.
+      </p>
+
+      <p>
+        <b>Homeworks</b> Homeworks are self-paced and do not affect your
+        course grade. However, they reflect the exam material, so it is in
+        your best interest to complete them promptly, for each lecture.
+        Aside from preparing you for the exam, they will assess and reinforce
+        your understanding of the material.
+
+        You can access the homeworks through <a href="http://www.newgradiance.com/services">Gradiance</a>
+        by creating an account (if you don't already have one) then signing
+        up for class token <b>E68759F1</b>. Once you have joined the class, navigate
+        to the Homeworks section on the left. <b>NOTE:</b> when we write "lab"
+        we indicate that you should do the corresponding lab found in the "Lab Projects" tab,
+        instead of the Homework tab.
+      </p>
+
+      <b>Exam Dates</b>
+      <ul>
+        <li>Midterm: in-class midterm on TBD</li>
+        <li>
+          Final: Friday, Dec 9th from 7:00-10:00 p.m. (see <a href="https://registrar.stanford.edu/autumn-quarter-exams">university
+          final exam scheduling</a>)
+        </li>
+      </ul>
+
+      <p>
+        <b>Exam Notes Sheet</b> For the midterm, we allow
+        students 1 two-sided 8.5x11" piece of paper with typed or written
+        notes.
+
+        For the <i>final exam</i> we will allow students <b>two</b> notes sheets.
+      </p>
+
+      <p>
+        <b>Late Days</b> You are allowed a total of <b>three</b> late days
+        shared between all project deadlines. You do not lose any credit when
+        using a late day. If you run out of late days and submit after the
+        deadline, you receive a 0. (EDIT: this was increased from 2 to 3 due
+        to P2 submission difficulties. For more, see piazza post 879).
+      </p>
+
+      <p>
+        <b>Lectures</b> Lectures occur on Tues/Thurs 4:30-5:50 p.m. in NVIDIA Auditorium. NOTE that while attendance is not mandatory,
+        we will be giving out extra credit for students with insightful in-class participation.
+      </p>
+      <p>
+        <b>Lecture Videos</b> Lecture videos will be recorded and posted on <a href="https://canvas.stanford.edu/">Canvas</a>.
+      </p>
+
+      <b>Textbook</b> There is no required textbook, but for students who want additional resources, we recommend the following two:
+      <ul>
+        <li>Database Systems 2nd Edition by Garcia-Molina</li>
+        <li>First Course in Database Systems 3rd Edition by Ullman</li>
+      </ul>
+
+      <p>
+        <b>Accomodations</b> Students who may need an academic accommodation based on the impact of a disability must initiate
+        the request with the Office of Accessible Education (OAE) and notify us at least 7 days (ONE week) prior to the Midterm
+        and/or Final Exam.
+      </p>
+
+      <!-- <p>
+        <b>Contacting Course Staff</b> Please use Piazza for public questions. To privately reach the instructors
+        you can either make a private Piazza post or send an email to:
+        <br><a href = "mailto: cs145-aut1819-staff@lists.stanford.edu">cs145-aut1819-staff@lists.stanford.edu</a>
+      </p> -->
+
+    </div>
+
+
+
+    </div>
+
+    <div class="row section" id="projects" style="padding-top: 60px;">
+      <div class="col-md-12">
+        <h2>Projects</h2>
+        <hr>
+        <p>
+          <b>Group Size</b> The first two projects are individual only, but the third project you are allowed
+          to work in teams of two.
+        </p>
+
+          <p>
+            <b>Project Submissions</b>
+            You will submit your projects via Gradescope. Sign up for Gradescope
+            using your Stanford email address and student ID. The course code is
+            MJ3ZYR.
+
+            Each assignment will include specific instructions regarding what
+            files to submit.
+          </p>
+
+          <p>
+            <b>Regrade Policy</b>
+            If you think that we've made a grading mistake or that the work
+            you submitted should be regraded, submit a regrade request on
+            Gradescope within one week of receiving your grade. Be sure that you
+            prepare a short and convincing argument on Gradescope about why you
+            think your work was incorrectly graded – we reserve the right to
+            ignore your regrade request if you don't provide a justification.
+
+            If you submit a regrade request, we reserve the right to regrade your
+            entire assignment. This means that your overall score could go
+            down.
+          </p>
+      </div>
+
+    </div>
+
+    <div class="row section" id="staff">
+      <div class="col-md-12">
+        <h2>Staff</h2>
+        <hr>
+        <p>Staff pics!</p>
+      </div>
+
+    </div>
+
+    <div class="row section" id="officehours">
+      <div class="col-md-12 mb-4">
+        <h2>Office Hours</h2>
+        <hr>
+        <p>All OH will be held in Huang Basement, in the large, open collaboration area with desk/tables. The one exception is Prof Shiva's OH, which will be held in Gates 415.</p>
+        <p>To sign up for OH, use our queue: <a href="https://queuestatus.com/queues/259">https://queuestatus.com/queues/259</a></p>
+        <iframe src="https://calendar.google.com/calendar/b/3/embed?showTitle=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=m9s25h4i5jkejs1q00695ldqqo%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FLos_Angeles"
+        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+    </div>
+
 
   </div>
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-4 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Stanford University 2019</p>
     </div>
@@ -109,6 +267,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="main.js"></script>
 
 </body>
 
